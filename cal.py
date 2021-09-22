@@ -6,7 +6,7 @@
 'ULTIMA  ACTUALIZACION : 22  de  Septiembre  /  2021'
 import math # importamos la libraria math para tener una referencia de pi
 n=float(input("ingresa el valor n que desees "))
-def zetaN(n): # defino la funcion zetaN para realizar el calculo de la sumatoria 
+def zeta(n): # defino la funcion zetaN para realizar el calculo de la sumatoria 
     k=1
     s=0
     i=1
@@ -16,7 +16,7 @@ def zetaN(n): # defino la funcion zetaN para realizar el calculo de la sumatoria
         s=s+suma
         i=i+1
     return(s) # retornamos el valor final de la sumatoria 
-p=zetaN(n)
+p=zeta(n)
 print("este es el resultado de tu sumatoria ",p)
 cal=((math.pi**2)/6) # calculamos el valor de pi al cuadrado dividido seis 
 e=cal-p # calculamos la diferencia entre cal y p
